@@ -3,8 +3,12 @@ import Memory from "./components/Memory";
 import "./App.css";
 
 function App() {
-    const { effectiveType = "unknown", downlink = "unknown", rtt = "unknown" } =
-        navigator.connection || {};
+    const {
+        effectiveType = "unknown",
+        downlink = "unknown",
+        rtt = "unknown",
+        type = "unknown",
+    } = navigator.connection || {};
 
     const performance = window.performance;
     const performanceList = performance.toJSON();
@@ -21,6 +25,7 @@ function App() {
                 <h1>Download speed: {downlink} Mbps</h1>
                 <h1>Round Trip Time: {rtt} RTT </h1>
                 <h1>Connection type: {effectiveType} </h1>
+                <h1>Connection type: {type} </h1>
             </div>
             <hr />
             <div>
