@@ -1,4 +1,5 @@
 import React from "react";
+import Memory from "./components/Memory";
 import "./App.css";
 
 function App() {
@@ -11,15 +12,10 @@ function App() {
 
     return (
         <div className="App">
-            <header className="App-header">Device Statistics</header>
-            <div>
-                <label>Memory</label>
-                <h1>{navigator.deviceMemory} GiB</h1>
-                <p>
-                    The max that will be reported here is 8GiB. Even if your
-                    device has more
-                </p>
-            </div>
+            <header className="App-header">
+                <h1>Device Statistics</h1>
+            </header>
+            <Memory />
             <div>
                 <label>Connection</label>
                 <h1>Download speed: {downlink} Mbps</h1>
