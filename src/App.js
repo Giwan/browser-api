@@ -27,21 +27,6 @@ function App() {
                 <h1>Connection type: {effectiveType} </h1>
                 <h1>Connection type: {type} </h1>
             </div>
-            <hr />
-            <div>
-                <label>Performance</label>
-                <h1>
-                    Performance connection start:{" "}
-                    {performanceList.timing.connectStart}
-                </h1>
-                <h1>
-                    Performance connection end:{" "}
-                    {performanceList.timing.connectEnd}
-                </h1>
-                <h1>
-                    Performance toJSON: {JSON.stringify(performance.toJSON())}
-                </h1>
-            </div>
         </div>
     );
 }
