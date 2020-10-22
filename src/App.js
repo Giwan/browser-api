@@ -83,7 +83,7 @@ function App() {
     return (
         <main className="App">
             <header className="App-header">
-                <h1>Device Statistics</h1>
+                <h1>Browser API Statistics</h1>
             </header>
             {data.map((cardItem) => (
                 <InfoCard key={cardItem.title} data={cardItem} />
