@@ -2,12 +2,17 @@
     --font-family-1: "Roboto", "Helvetica", "sans-serif";
     --font-family-2: "Oswald", "Helvetica", "sans-serif";
     --font-size-default: 22px;
+    --font-size-small: 14px;
     --unit: 16px;
+
+    --color-primary: #483f38;
+    --color-accent: #2b685f;
+    --color-background: #e1dacd;
 }
 
 body {
-    background-color: #e1dacd;
-    color: #483f38;
+    background-color: var(--color-background);
+    color: var(--color-primary);
     padding: 16px;
     font-family: var(--font-family-1);
     font-size: var(--font-size-default);
@@ -25,7 +30,7 @@ body {
 }
 
 .cardValue {
-    color: #2b685f;
+    color: var(--color-accent);
     font-size: calc(3 * var(--font-size-default));
     text-transform: uppercase;
 }
@@ -43,4 +48,19 @@ body {
 
 .card p {
     line-height: 1.5em;
+}
+
+footer {
+    border-top: 1px solid var(--color-primary);
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: var(--font-size-small);
+}
+
+footer h1 {
+    grid-column: 1 / -1;
+    font-size: var(--font-size-small);
+    text-transform: uppercase;
+    font-weight: normal;
 }

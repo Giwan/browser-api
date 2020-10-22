@@ -1,5 +1,6 @@
 import React from "react";
 import InfoCard from "./components/InfoCard";
+import Footer from "./components/Footer";
 import "./App.css";
 
 const getMemoryValue = () => {
@@ -87,6 +88,7 @@ function App() {
             {data.map((cardItem) => (
                 <InfoCard key={cardItem.title} data={cardItem} />
             ))}
+            <Footer />
         </main>
     );
 }
