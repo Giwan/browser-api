@@ -1,0 +1,46 @@
+:root {
+    --font-family-1: "Roboto", "Helvetica", "sans-serif";
+    --font-family-2: "Oswald", "Helvetica", "sans-serif";
+    --font-size-default: 22px;
+    --unit: 16px;
+}
+
+body {
+    background-color: #e1dacd;
+    color: #483f38;
+    padding: 16px;
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-default);
+}
+
+.App {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    gap: calc(var(--unit) * 2);
+}
+
+.App-header {
+    grid-column: 1 / -1;
+    margin-bottom: 48px;
+}
+
+.cardValue {
+    color: #2b685f;
+    font-size: calc(3 * var(--font-size-default));
+    text-transform: uppercase;
+}
+
+.cardUnit {
+    font-size: 0.5em;
+    font-weight: normal;
+    margin-left: var(--unit);
+}
+
+.card label {
+    text-transform: uppercase;
+    font-family: var(--font-family-2);
+}
+
+.card p {
+    line-height: 1.5em;
+}
