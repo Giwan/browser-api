@@ -68,13 +68,13 @@ const data = [
         value: getMemoryValue(),
         unit: "GB",
         description:
-            "The max that will be reported here is 8GiB. Even if your device has more",
+            "The max that will be reported here is 8GB. Even if your device has more",
     },
     {
         title: "Processors",
         value: getProcessorsValue(),
         description:
-            "The max that will be reported here is 8GiB. Even if your device has more",
+            "Logical processors available. Is at least one at all times.",
     },
     ...getConnectionDataObjects(),
 ];
