@@ -26,15 +26,33 @@ body {
 
 header {
     grid-column: 1 / -1;
-    margin-bottom: 48px;
+    margin: 0;
     text-transform: uppercase;
     font-size: var(--font-size-default);
+}
+header h1 {
+    margin: 0;
+}
+
+.card {
+    /* background-color: red; */
+    /* border-left: 1px solid var(--color-primary); */
+    /* padding-left: var(--unit); */
 }
 
 .cardValue {
     color: var(--color-accent);
     font-size: calc(3 * var(--font-size-default));
     text-transform: uppercase;
+}
+
+.card h1 {
+    /* margin: 0 0 calc(var(--unit) * 2) 0; */
+    border-left: 1px solid var(--color-primary);
+    padding-left: var(--unit);
+    box-sizing: border-box;
+    transform: rotate(-10deg);
+    /* text-align: center; */
 }
 
 .cardUnit {
@@ -46,10 +64,17 @@ header {
 .card label {
     text-transform: uppercase;
     font-family: var(--font-family-2);
+    text-align: right;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--color-primary);
+    margin-bottom: var(--unit);
 }
 
 .card p {
     line-height: 1.5em;
+    margin: 0;
 }
 
 footer {

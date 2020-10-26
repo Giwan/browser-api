@@ -45,7 +45,7 @@ const getConnectionDataObjects = () => {
     };
 
     const rttInfo = {
-        title: "RTT",
+        title: "Round Trip Time",
         value: rtt,
         unit: "RTT",
         description:
@@ -82,7 +82,7 @@ const data = [
 function App() {
     return (
         <main className="App">
-            <header className="App-header">
+            <header>
                 <h1>Browser API Statistics</h1>
             </header>
             {data.map((cardItem) => (
